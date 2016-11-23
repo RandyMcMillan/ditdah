@@ -15,7 +15,7 @@ int main (
     ditdah.insert(make_pair("-","T"));
     ditdah.insert(make_pair("--","M"));
     ditdah.insert(make_pair("---","O"));
-    ditdah.insert(make_pair("----","?"));
+    ditdah.insert(make_pair("----","Ch"));
     ditdah.insert(make_pair("-----","0"));
 //
     ditdah.insert(make_pair("-.","N"));
@@ -62,13 +62,17 @@ int main (
     ditdah.insert(make_pair("....-","4"));
     ditdah.insert(make_pair(".....","5"));
    
-        string ss2 = "A";//argv[argc];
-        DitDah::iterator it2 = ditdah.find(ss2);
+//        string ss2 = "....";//argv[argc];
+//        string ss2 = (string)argv[argc];
+    std::string word = argv[1];
+
+//        DitDah::iterator it2 = ditdah.find(ss2);
+        DitDah::iterator it2 = ditdah.find(word);
         
         if( it2 == ditdah.end() )
-            cout << "Not Found~!"<<endl;
+            cout << " "<<endl;
         else
-            cout << "Found"<<endl;
+            cout << it2->second<<endl;
         
         
         
