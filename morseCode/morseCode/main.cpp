@@ -3,8 +3,15 @@
 #include <string>
 using namespace std;
 //http://stackoverflow.com/questions/8404260/stl-mapchar-char-destructor
-int main()
-{
+
+
+
+    
+    int main (
+              int         argc,
+              const char  *argv[]
+              ) {
+    
     typedef map<string,string> Strings;
     Strings strings;
     strings.insert(make_pair("foo","bar"));
@@ -68,5 +75,15 @@ int main()
     ditdah.insert(make_pair("....","H"));
     ditdah.insert(make_pair("....-","4"));
     ditdah.insert(make_pair(".....","5"));
-    
+   
+        
+        
+        Strings::iterator findIt = strings.find(ss);
+        if( findIt == strings.end() )
+            cout << "Not Found~!";
+        else
+            cout << "Found";
+        
+        
+        
 }
