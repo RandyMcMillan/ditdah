@@ -1,48 +1,63 @@
-//
-//  main.cpp
-//  morseCode
-//
-//  Created by Randy McMillan on 11/23/16.
-//  Copyright © 2016 RandyMcMillan.net. All rights reserved.
-//
-
-#include <iostream>
-#include <map>
+//Program tested on Microsoft Visual Studio 2008 - Zahid Ghadialy
+//This program shows use of multi-maps
+//We input multiple phone numbers for different people
+#include<iostream>
+#include<map>
 #include <string>
-#include <iterator>
 
+using namespace std;
 
-//http://thispointer.com/stdmap-tutorial-part-1-usage-detail-with-examples/
-//http://www.cplusplus.com/reference/map/map/map/
-//http://en.cppreference.com/w/cpp/container/map/find
+//forward declaration
+void printer(multimap<string, int> pN);
 
-int main(int argc, const char * argv[]) {
+int main()
+{
+    multimap<string, int> phoneNums;
     
-    std::map<std::string, int> dah;
-// Inserting data in std::map
-    dah.insert(std::make_pair("earth", 1));
-    dah.insert(std::make_pair("moon", 2));
-    dah["sun"] = 3;
-    // Will replace the value of already added key i.e. earth
-    dah["earth"] = 4;
-    // Iterate through all elements in std::map
-    std::map<std::string, int>::iterator it = dah.begin();
-    while(it != dah.end())
+    //Insert key, value as pairs
+    phoneNums.insert(pair<string, int>("Joe",123));
+    phoneNums.insert(pair<string, int>("Will",444));
+    printer(phoneNums);
+    
+    //Insert duplicates
+    phoneNums.insert(pair<string, int>("Joe",369));
+    phoneNums.insert(pair<string, int>("Smith",567));
+    phoneNums.insert(pair<string, int>("Joe",888));
+    phoneNums.insert(pair<string, int>("Will",999));
+    printer(phoneNums);
+    
+    //Checking frequency of different keys
+    cout<<"\n\nFrequency of different names"<<endl;
+    cout<<"Number of Phones for Joe = "<<phoneNums.count("Joe")<<endl;
+    cout<<"Number of Phones for Will = "<<phoneNums.count("Will")<<endl;
+    cout<<"Number of Phones for Smith = "<<phoneNums.count("Smith")<<endl;
+    cout<<"Number of Phones for Zahid = "<<phoneNums.count("Zahid")<<endl;
+    
+    //Print all Joe from the list and then erase them
+    pair<multimap<string,int>::iterator, multimap<string,int>::iterator> ii;
+    multimap<string, int>::iterator it; //Iterator to be used along with ii
+    ii = phoneNums.equal_range("Joe"); //We get the first and last entry in ii;
+    cout<<"\n\nPrinting all Joe and then erasing them"<<endl;
+    for(it = ii.first; it != ii.second; ++it)
     {
-        std::cout<<it->first<<" :: "<<it->second<<std::endl;
-        it++;
+        cout<<"Key = "<<it->first<<"    Value = "<<it->second<<endl;
     }
-    // Check if insertion is successful or not
-    if(dah.insert(std::make_pair("earth", 1)).second == false)
-    {
-        std::cout<<"Element with key 'earth' not inserted because already existed"<<std::endl;
-    }
-    // Searching element in std::map by key.
-    if(dah.find("sun") != dah.end())
-        std::cout<<"word 'sun' found"<<std::endl;
-    if(dah.find("mars") == dah.end())
-        std::cout<<"word 'mars' not found"<<std::endl;
-
+    phoneNums.erase(ii.first, ii.second);
+    printer(phoneNums);
     
     return 0;
 }
+
+//This method prints the vector
+void printer(multimap<string, int> pN)
+{
+    cout<<"\n\nMultimap printer method"<<endl;
+    cout<<"Map size = "<<pN.size()<<endl;
+    multimap<string, int>::iterator it = pN.begin();
+    while(it != pN.end())
+    {
+        cout<<"Key = "<<it->first<<"    Value = "<<it->second<<endl;
+        it++;
+    }
+}
+
