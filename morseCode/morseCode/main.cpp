@@ -23,21 +23,32 @@ int main (
     ditdah.insert(make_pair("---","O"));
     ditdah.insert(make_pair("O","---"));
     ditdah.insert(make_pair("o","---"));
-    
+//Ch ch ----
     ditdah.insert(make_pair("----","Ch"));
-    
+    ditdah.insert(make_pair("Ch","----"));
+    ditdah.insert(make_pair("ch","----"));
+//0 -----
     ditdah.insert(make_pair("-----","0"));
-
-    //
+    ditdah.insert(make_pair("0","-----"));
+//N n -.
     ditdah.insert(make_pair("-.","N"));
-    
+    ditdah.insert(make_pair("N","-."));
+    ditdah.insert(make_pair("n","-."));
+//D d -..
     ditdah.insert(make_pair("-..","D"));
-    
+    ditdah.insert(make_pair("D","-.."));
+    ditdah.insert(make_pair("d","-.."));
+//B b -...
     ditdah.insert(make_pair("-...","B"));
-    
+    ditdah.insert(make_pair("B","-..."));
+    ditdah.insert(make_pair("b","-..."));
+//6 -....
     ditdah.insert(make_pair("-....","6"));
-//
+    ditdah.insert(make_pair("6","-...."));
+//K -.-
     ditdah.insert(make_pair("-.-","K"));
+    ditdah.insert(make_pair("K","-.-"));
+    ditdah.insert(make_pair("k","-.-"));
     
     ditdah.insert(make_pair("-.--","Y"));
     
