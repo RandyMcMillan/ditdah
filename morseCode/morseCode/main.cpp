@@ -78,8 +78,8 @@ using namespace std;
    
         
         
-        Strings::iterator findIt = strings.find(ss);
-        if( findIt == strings.end() )
+        Strings::iterator findIt = strings.find(argv[argc]);
+        if( findIt == ditdah.end() )
             cout << "Not Found~!";
         else
             cout << "Found";
