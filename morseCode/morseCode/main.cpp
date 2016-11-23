@@ -78,7 +78,7 @@ using namespace std;
    
         
         
-        Strings::iterator findIt = strings.find(argv[argc]);
+        Strings::iterator findIt = ditdah.find(argv[argc]);
         if( findIt == ditdah.end() )
             cout << "Not Found~!";
         else
