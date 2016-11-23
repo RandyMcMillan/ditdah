@@ -4,24 +4,10 @@
 using namespace std;
 //http://stackoverflow.com/questions/8404260/stl-mapchar-char-destructor
 
-
-
-    
-    int main (
-              int         argc,
-              const char  *argv[]
-              ) {
-    
-    typedef map<string,string> Strings;
-    Strings strings;
-    strings.insert(make_pair("foo","bar"));
-    
-    string ss = "foo";
-    Strings::iterator it = strings.find(ss);
-    if( it == strings.end() )
-        cout << "Not Found~!";
-    else
-        cout << "Found";
+int main (
+  int         argc,
+  const char  *argv[]
+  ) {
     
     typedef map<string,string> DitDah;
     DitDah ditdah;
@@ -76,13 +62,13 @@ using namespace std;
     ditdah.insert(make_pair("....-","4"));
     ditdah.insert(make_pair(".....","5"));
    
+        string ss2 = "A";//argv[argc];
+        DitDah::iterator it2 = ditdah.find(ss2);
         
-        
-        Strings::iterator findIt = ditdah.find(argv[argc]);
-        if( findIt == ditdah.end() )
-            cout << "Not Found~!";
+        if( it2 == ditdah.end() )
+            cout << "Not Found~!"<<endl;
         else
-            cout << "Found";
+            cout << "Found"<<endl;
         
         
         
