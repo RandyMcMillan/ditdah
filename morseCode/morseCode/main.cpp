@@ -49,14 +49,21 @@ int main (
     ditdah.insert(make_pair("-.-","K"));
     ditdah.insert(make_pair("K","-.-"));
     ditdah.insert(make_pair("k","-.-"));
-    
+//Y y -.--
     ditdah.insert(make_pair("-.--","Y"));
-    
+    ditdah.insert(make_pair("Y","-.--"));
+    ditdah.insert(make_pair("y","-.--"));
+//C c -.-.
     ditdah.insert(make_pair("-.-.","C"));
-//
+    ditdah.insert(make_pair("C","-.-."));
+    ditdah.insert(make_pair("c","-.-."));
+//D d -..
     ditdah.insert(make_pair("-..","D"));
-    
+    ditdah.insert(make_pair("D","-.."));
+    ditdah.insert(make_pair("d","-.."));
+//X x -..-
     ditdah.insert(make_pair("-..-","X"));
+    ditdah.insert(make_pair("X","-..-"));
 //
     ditdah.insert(make_pair("-...","B"));
     
@@ -109,19 +116,16 @@ int main (
     
     
     
-
-//        string ss2 = "....";//argv[argc];
-//        string ss2 = (string)argv[argc];
+    {
     std::string word = argv[1];
-
-//        DitDah::iterator it2 = ditdah.find(ss2);
-        DitDah::iterator it2 = ditdah.find(word);
+    DitDah::iterator it2 = ditdah.find(word);
         
         if( it2 == ditdah.end() )
             cout << " "<<endl;
         else
             cout << it2->second<<endl;
-        
-        
-        
+    }
+
+
+
 }
