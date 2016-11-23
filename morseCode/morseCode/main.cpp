@@ -64,6 +64,7 @@ int main (
 //X x -..-
     ditdah.insert(make_pair("-..-","X"));
     ditdah.insert(make_pair("X","-..-"));
+    ditdah.insert(make_pair("x","-..-"));
 //
     ditdah.insert(make_pair("-...","B"));
     
