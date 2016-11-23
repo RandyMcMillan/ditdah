@@ -117,8 +117,8 @@ int main (
     
     
     {
-    std::string word = argv[1];
-    DitDah::iterator it2 = ditdah.find(word);
+    std::string letter = argv[1];
+    DitDah::iterator it2 = ditdah.find(letter);
         
         if( it2 == ditdah.end() )
             cout << " "<<endl;
