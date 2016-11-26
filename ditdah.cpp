@@ -30,6 +30,15 @@ int main (
 //0 -----
     ditdah.insert(make_pair("-----","0"));
     ditdah.insert(make_pair("0","-----"));
+
+    ditdah.insert(make_pair("----.","9"));
+    ditdah.insert(make_pair("9","----."));
+
+    ditdah.insert(make_pair("---..","8"));
+    ditdah.insert(make_pair("8","---.."));
+
+    ditdah.insert(make_pair("---.","."));
+    ditdah.insert(make_pair(".","---."));
 //N n -.
     ditdah.insert(make_pair("-.","N"));
     ditdah.insert(make_pair("N","-."));
