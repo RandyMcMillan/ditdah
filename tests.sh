@@ -1,3 +1,4 @@
+#~/ditdah/ditdah/DerivedData/ditdah/Build/Products/Debug/./morseCode
+#!/bin/bash
 
-
-~/morseCodeHeapExcercise/morseCode/DerivedData/morseCode/Build/Products/Debug/./morseCode
+./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah a
