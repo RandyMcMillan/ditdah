@@ -67,55 +67,91 @@ int main (
     ditdah.insert(make_pair("x","-..-"));
 //
     ditdah.insert(make_pair("-...","B"));
+    ditdah.insert(make_pair("B","-..."));
+    ditdah.insert(make_pair("b","-..."));
     
     ditdah.insert(make_pair("-....","6"));
+    ditdah.insert(make_pair("6","-...."));
 //
     ditdah.insert(make_pair(".","E"));
+    ditdah.insert(make_pair("E","."));
+    ditdah.insert(make_pair("e","."));
     
     ditdah.insert(make_pair("..","I"));
+    ditdah.insert(make_pair("I",".."));
+    ditdah.insert(make_pair("i",".."));
     
     ditdah.insert(make_pair("...","S"));
+    ditdah.insert(make_pair("S","..."));
+    ditdah.insert(make_pair("s","..."));
     
     ditdah.insert(make_pair("....","H"));
+    ditdah.insert(make_pair("H","...."));
+    ditdah.insert(make_pair("h","...."));
     
     ditdah.insert(make_pair(".....","5"));
+    ditdah.insert(make_pair("5","....."));
 //
     ditdah.insert(make_pair(".-","A"));
+    ditdah.insert(make_pair("A",".-"));
+    ditdah.insert(make_pair("a",".-"));
     
     ditdah.insert(make_pair(".--","W"));
+    ditdah.insert(make_pair("W",".--"));
+    ditdah.insert(make_pair("w",".--"));
     
     ditdah.insert(make_pair(".---","J"));
+    ditdah.insert(make_pair("J",".---"));
+    ditdah.insert(make_pair("j",".---"));
     
     ditdah.insert(make_pair(".----","1"));
+    ditdah.insert(make_pair("1",".----"));
 //
     ditdah.insert(make_pair("..","I"));
+    ditdah.insert(make_pair("I",".."));
+    ditdah.insert(make_pair("i",".."));
     
     ditdah.insert(make_pair("..-","U"));
+    ditdah.insert(make_pair("U","..-"));
+    ditdah.insert(make_pair("u","..-"));
     
     ditdah.insert(make_pair("..--","-"));
+    ditdah.insert(make_pair("-","..--"));
     
     ditdah.insert(make_pair("..---","2"));
+    ditdah.insert(make_pair("2","..---"));
 //
     ditdah.insert(make_pair("-..","D"));
+    ditdah.insert(make_pair("D","-.."));
     
     ditdah.insert(make_pair("-..-","X"));
+    ditdah.insert(make_pair("X","-..-"));
+    ditdah.insert(make_pair("x","-..-"));
 //
     ditdah.insert(make_pair("..-.","F"));
+    ditdah.insert(make_pair("F","..-"));
+    ditdah.insert(make_pair("f","..-"));
     
     ditdah.insert(make_pair("...","S"));
+    ditdah.insert(make_pair("S","..."));
+    ditdah.insert(make_pair("s","..."));
     
     ditdah.insert(make_pair("...-","V"));
+    ditdah.insert(make_pair("V","...-"));
+    ditdah.insert(make_pair("v","...-"));
     
     ditdah.insert(make_pair("...--","3"));
+    ditdah.insert(make_pair("3","...--"));
 //
     ditdah.insert(make_pair("....","H"));
+    ditdah.insert(make_pair("H","...."));
+    ditdah.insert(make_pair("h","...."));
     
     ditdah.insert(make_pair("....-","4"));
+    ditdah.insert(make_pair("4","....-"));
     
     ditdah.insert(make_pair(".....","5"));
-
-    
-    
+    ditdah.insert(make_pair("5","....."));
     
     {
     std::string letter = argv[1];
@@ -126,7 +162,5 @@ int main (
         else
             cout << it2->second<<endl;
     }
-
-
 
 }
