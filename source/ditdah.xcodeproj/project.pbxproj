@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4860AFFE1DEA3D3700DBF190 /* ditdah.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4860AFFD1DEA3D3700DBF190 /* ditdah.cpp */; };
+		488D4AFE1DEA4121005D5C56 /* ditdah.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488D4AFD1DEA4121005D5C56 /* ditdah.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4860AFF31DEA3D1F00DBF190 /* ditdah */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ditdah; sourceTree = BUILT_PRODUCTS_DIR; };
-		4860AFFD1DEA3D3700DBF190 /* ditdah.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ditdah.cpp; sourceTree = "<group>"; };
+		488D4AFD1DEA4121005D5C56 /* ditdah.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ditdah.cpp; path = ../../ditdah.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		4860AFF51DEA3D1F00DBF190 /* ditdah */ = {
 			isa = PBXGroup;
 			children = (
-				4860AFFD1DEA3D3700DBF190 /* ditdah.cpp */,
+				488D4AFD1DEA4121005D5C56 /* ditdah.cpp */,
 			);
 			path = ditdah;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4860AFFE1DEA3D3700DBF190 /* ditdah.cpp in Sources */,
+				488D4AFE1DEA4121005D5C56 /* ditdah.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +249,7 @@
 				4860AFFC1DEA3D1F00DBF190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
