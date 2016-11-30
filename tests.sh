@@ -1,54 +1,54 @@
 #~/ditdah/ditdah/DerivedData/ditdah/Build/Products/Debug/./morseCode
 #!/bin/bash
 echo A = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah A
+./ditdah A
 echo B = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah B
+./ditdah B
 echo C = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah C
+./ditdah C
 echo D = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah D
+./ditdah D
 echo E = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah E
+./ditdah E
 echo F = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah F
+./ditdah F
 echo G = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah G
+./ditdah G
 echo H = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah H
+./ditdah H
 echo I = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah I
+./ditdah I
 echo J = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah J
+./ditdah J
 echo K = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah K
+./ditdah K
 echo L = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah L
+./ditdah L
 echo M = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah M
+./ditdah M
 echo N = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah N
+./ditdah N
 echo O = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah O
+./ditdah O
 echo P = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah P
+./ditdah P
 echo Q = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah Q
+./ditdah Q
 echo R = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah R
+./ditdah R
 echo S = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah S
+./ditdah S
 echo T = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah T
+./ditdah T
 echo U = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah U
+./ditdah U
 echo V = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah V
+./ditdah V
 echo W = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah W
+./ditdah W
 echo X = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah X
+./ditdah X
 echo Y = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah Y
+./ditdah Y
 echo Z = 
-./ditdah/DerivedData/ditdah/Build/Products/Debug/./ditdah Z
+./ditdah Z
