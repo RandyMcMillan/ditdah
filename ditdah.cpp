@@ -189,23 +189,27 @@ int main (
     std :: cout << "Enter the name of an existing text file: ";
     std :: cin.get (str, 256);// get c-string
     std :: ifstream  is(str);    // open file
+
     char  c;
-    //    DitDah :: iterator  it = ditdah.find(c);
+    is.get(c);
+    string  s(1, c);
+    std :: cout << s << std :: endl;
 
-    while ( is.get(c) ) {// loop getting single characters
-            std :: cout << c;
 
-            //         if( it == ditdah.end () ) {
-            cout << " " << endl;
-            //               }
-            //     else
-                {
-                //              cout << it->second << endl;
-                }
-
-            is.close ();// close file
-
-            }
+    /*
+     *  DitDah :: iterator  it2 = ditdah.find( string( 1,  is.get(c) ) );
+     *
+     *  while ( is.get(c) ) {// loop getting single characters
+     *          std :: cout << c;
+     *
+     *          if( it2 == ditdah.end () )
+     *              cout << " " << endl;
+     *          else
+     *              cout << it2->second << endl;
+     *          }
+     *
+     *  is.close ();// close file
+     */
     }// main
 
 /*******************************************************************************
