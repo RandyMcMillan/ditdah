@@ -193,23 +193,23 @@ int main (
     char  c;
     is.get(c);
     string  s(1, c);
-    std :: cout << s << std :: endl;
+    DitDah :: iterator  it2 = ditdah.find(s);
+
+    while ( is.get(c) ) {// loop getting single characters
+            std :: cout << c;
+
+            if( it2 == ditdah.end () )
+                cout << " " << endl;
+
+            else
+                cout << it2->second << endl;
+
+            }
 
 
-    /*
-     *  DitDah :: iterator  it2 = ditdah.find( string( 1,  is.get(c) ) );
-     *
-     *  while ( is.get(c) ) {// loop getting single characters
-     *          std :: cout << c;
-     *
-     *          if( it2 == ditdah.end () )
-     *              cout << " " << endl;
-     *          else
-     *              cout << it2->second << endl;
-     *          }
-     *
-     *  is.close ();// close file
-     */
+    is.close ();// close file
+
+
     }// main
 
 /*******************************************************************************
