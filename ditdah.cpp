@@ -191,25 +191,19 @@ int main (
     std :: ifstream  is(str);    // open file
 
     char  c;
-    is.get(c);
-    string  s(1, c);
-    DitDah :: iterator  it2 = ditdah.find(s);
 
     while ( is.get(c) ) {// loop getting single characters
             std :: cout << c;
+            string  s(1, c);
+            DitDah :: iterator  it2 = ditdah.find(s);
 
             if( it2 == ditdah.end () )
                 cout << " " << endl;
-
             else
                 cout << it2->second << endl;
-
             }
 
-
     is.close ();// close file
-
-
     }// main
 
 /*******************************************************************************
