@@ -7,6 +7,7 @@
 
 #include <map>
 #include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 // http://stackoverflow.com/questions/8404260/stl-mapchar-char-destructor
@@ -15,9 +16,9 @@ int main (
     int         argc,
     const char  *argv[]
     ) {
-
+    //
     typedef map<string, string> DitDah;
-DitDah  ditdah;
+    DitDah  ditdah;
     // T t -
     ditdah.insert( make_pair("-", "T") );
     ditdah.insert( make_pair("T", "-") );
@@ -184,16 +185,27 @@ DitDah  ditdah;
     ditdah.insert( make_pair(".....", "5") );
     ditdah.insert( make_pair("5", ".....") );
 
-        {
-std :: string  letter = argv[1];
-DitDah :: iterator  it2 = ditdah.find(letter);
+    char  str[256];
+    std :: cout << "Enter the name of an existing text file: ";
+    std :: cin.get (str, 256);// get c-string
+    std :: ifstream  is(str);    // open file
+    char  c;
+    //    DitDah :: iterator  it = ditdah.find(c);
 
-        if( it2 == ditdah.end () )
+    while ( is.get(c) ) {// loop getting single characters
+            std :: cout << c;
+
+            //         if( it == ditdah.end () ) {
             cout << " " << endl;
-        else
-            cout << it2->second << endl;
-        }
+            //               }
+            //     else
+                {
+                //              cout << it->second << endl;
+                }
 
+            is.close ();// close file
+
+            }
     }// main
 
 /*******************************************************************************
