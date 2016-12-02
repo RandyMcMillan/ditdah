@@ -57,13 +57,10 @@ DitDah  ditdah;
     ditdah.insert( make_pair("--..", "Z") );
     ditdah.insert( make_pair("--..", "z") );
     ditdah.insert( make_pair("Z", "--..") );
-    //
+    // G g --.
     ditdah.insert( make_pair("--.", "G") );
     ditdah.insert( make_pair("--.", "G") );
     ditdah.insert( make_pair("g", "--.") );
-
-
-
     // N n -.
     ditdah.insert( make_pair("-.", "N") );
     ditdah.insert( make_pair("N", "-.") );
