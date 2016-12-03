@@ -12,13 +12,12 @@
 using namespace std;
 // http://stackoverflow.com/questions/8404260/stl-mapchar-char-destructor
 
-int main (
-    int         argc,
-    const char  *argv[]
-    ) {
+typedef map<string, string> DitDah;
+DitDah  ditdah;
+
+//
+void init () {
     //
-    typedef map<string, string> DitDah;
-    DitDah  ditdah;
     // T t -
     ditdah.insert( make_pair("-", "T") );
     ditdah.insert( make_pair("T", "-") );
@@ -184,8 +183,15 @@ int main (
 
     ditdah.insert( make_pair(".....", "5") );
     ditdah.insert( make_pair("5", ".....") );
+    }// init
 
-    char  str[256];
+//
+//
+void run () {
+
+
+char  str[256];
+
     std :: cout << "Enter the name of an existing text file: ";
     std :: cin.get (str, 256);// get c-string
     std :: ifstream  is(str);    // open file
@@ -204,6 +210,17 @@ int main (
             }
 
     is.close ();// close file
+
+    }// run
+
+//
+int main (
+    int         argc,
+    const char  *argv[]
+    ) {
+    init ();
+    run ();
+
     }// main
 
 /*******************************************************************************
