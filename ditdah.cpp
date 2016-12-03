@@ -193,14 +193,14 @@ int main (
     char  c;
 
     while ( is.get(c) ) {// loop getting single characters
-            std :: cout << c;
+            // std :: cout << c;
             string  s(1, c);
             DitDah :: iterator  it2 = ditdah.find(s);
 
             if( it2 == ditdah.end () )
                 cout << " " << endl;
             else
-                cout << it2->second << endl;
+                cout << it2->second << " ";
             }
 
     is.close ();// close file
