@@ -16,6 +16,32 @@ typedef map<string, string> DitDah;
 DitDah  ditdah;
 
 //
+void run () {
+
+char  str[256];
+
+    std :: cout << "Enter the name of an existing text file: ";
+    std :: cin.get (str, 256);// get c-string
+    std :: ifstream  is(str);    // open file
+
+    char  c;
+
+    while ( is.get(c) ) {// loop getting single characters
+            // std :: cout << c;
+            string  s(1, c);
+            DitDah :: iterator  it2 = ditdah.find(s);
+
+            if( it2 == ditdah.end () )
+                cout << " " << endl;
+            else
+                cout << it2->second << " ";
+            }
+
+    is.close ();// close file
+
+    }// run
+
+//
 void init () {
     //
     // T t -
@@ -184,34 +210,6 @@ void init () {
     ditdah.insert( make_pair(".....", "5") );
     ditdah.insert( make_pair("5", ".....") );
     }// init
-
-//
-//
-void run () {
-
-
-char  str[256];
-
-    std :: cout << "Enter the name of an existing text file: ";
-    std :: cin.get (str, 256);// get c-string
-    std :: ifstream  is(str);    // open file
-
-    char  c;
-
-    while ( is.get(c) ) {// loop getting single characters
-            // std :: cout << c;
-            string  s(1, c);
-            DitDah :: iterator  it2 = ditdah.find(s);
-
-            if( it2 == ditdah.end () )
-                cout << " " << endl;
-            else
-                cout << it2->second << " ";
-            }
-
-    is.close ();// close file
-
-    }// run
 
 //
 int main (
