@@ -13,7 +13,7 @@ using namespace std;
 // http://stackoverflow.com/questions/8404260/stl-mapchar-char-destructor
 typedef map<string, string> DitDah;
 DitDah  ditdah;
-//
+// http://stackoverflow.com/questions/17201590/c-convert-from-1-char-to-string
 void run (const char) {
 
 char  str[256];
